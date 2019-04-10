@@ -1,4 +1,6 @@
 #!/usr/bin/ruby -w
-Dir.entries(ARGV.first || Dir.pwd).sort.each do |entry|
-  puts entry
+# ARGV == ["C:/Program\ Files", "C:/Windows"]
+Dir.entries(ARGV.first || Dir.pwd).sort.each do |entries|
+  puts entries
 end
+

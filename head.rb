@@ -1,4 +1,7 @@
 #!/usr/bin/ruby -w
-Dir.entries(Dir.pwd).sort.each do |entry|
-  puts entry
+
+ARGV.each do |file|
+  File.open(file, "r").each_line.with_index(1) do |line, line_num|
+    puts line if line_num <= 3
+  end
 end

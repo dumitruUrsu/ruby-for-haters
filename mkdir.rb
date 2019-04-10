@@ -1,4 +1,4 @@
 #!/usr/bin/ruby -w
-Dir.entries(Dir.pwd).sort.each do |entry|
-  puts entry
-end
+
+# ARGV.first == ARGV[0]
+Dir.mkdir(ARGV.first)
